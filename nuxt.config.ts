@@ -74,7 +74,7 @@ export default defineNuxtConfig({
     '/blog/rss.xml': { prerender: true },
     // '/sitemap.xml': { prerender: true },
     '/newsletter': { prerender: true },
-    '/modules': { prerender: true },
+    // '/modules': { prerender: true },
     // Redirects
     // '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
     // '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
@@ -118,15 +118,15 @@ export default defineNuxtConfig({
       }
     }
   },
-  hooks: {
-    async 'prerender:routes' (ctx) {
-      // Add Nuxt 2 modules to the prerender list
-      const { modules } = await ofetch<{ modules: [] }>('https://syrincs-com.vercel.app/api/showmodule.json').catch(() => ({ modules: [] }))
-      for (const module of modules) {
-        ctx.routes.add(`/modules/${module.name}`)
-      }
-    }
-  },
+  // hooks: {
+  //   async 'prerender:routes' (ctx) {
+  //     // Add Nuxt 2 modules to the prerender list
+  //     const { modules } = await ofetch<{ modules: [] }>('https://syrincs-com.vercel.app/api/showmodule.json').catch(() => ({ modules: [] }))
+  //     for (const module of modules) {
+  //       ctx.routes.add(`/modules/${module.name}`)
+  //     }
+  //   }
+  // },
 
   $development: {
     runtimeConfig: {
