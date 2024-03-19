@@ -11,7 +11,6 @@ export default eventHandler(async (event) => {
           "sponsorUrl": "https://www.netlify.com",
           "monthlyPriceInDollars": 2500
         }
-        
       ],
       "gold": [
         {
