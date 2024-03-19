@@ -15,7 +15,7 @@ const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
 })
 
 useHead({
-  titleTemplate: title => title ? `${title} · Nuxt` : 'Nuxt: The Intuitive Web Framework',
+  titleTemplate: title => title ? `${title} · Syrincs` : 'Syrincs: 颜如玉 声入心',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: color }
@@ -29,10 +29,10 @@ useHead({
 })
 
 useSeoMeta({
-  ogSiteName: 'Nuxt',
+  ogSiteName: 'Syrincs',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterSite: 'nuxt_js'
+  twitterSite: 'syrincs'
 })
 
 watch(() => search.value?.commandPaletteRef?.query, debounce((query: string) => {
