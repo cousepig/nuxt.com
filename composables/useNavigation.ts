@@ -17,7 +17,7 @@ const _useNavigation = () => {
               '1981年,SYRINCS专业音响品牌由Wolfgang bartsch博士、Conrad Schucht和Jürgen Eggeling创建于德国柏林。',
             icon: 'i-ph-rocket-launch-duotone',
             to: '/brand/about',
-            active: route.path.startsWith('/brand/about'),
+            active: route.path.startsWith('/brand/about')
           },
           {
             label: '品牌历程',
@@ -25,7 +25,7 @@ const _useNavigation = () => {
               'SYRINCS,德国的音色,在音色的使用设计中使用壹种十分严密的数学秩序。',
             icon: 'i-ph-book-open-duotone',
             to: '/brand/history',
-            active: route.path.startsWith('/brand/history'),
+            active: route.path.startsWith('/brand/history')
           },
           {
             label: '品牌概述',
@@ -33,9 +33,9 @@ const _useNavigation = () => {
               'SYRINCS专业音响品牌,用于安装或移动、室内或室外、大型或小型, SYRINCS音箱、控制电子设备、机械附件和远程控制装置可完全满足各种应用条件及恶劣的气候环境。',
             icon: 'i-ph-code',
             to: '/brand/intro',
-            active: route.path.startsWith('/brand/intro'),
-          },
-        ],
+            active: route.path.startsWith('/brand/intro')
+          }
+        ]
       },
       {
         label: '新闻',
@@ -47,20 +47,20 @@ const _useNavigation = () => {
             label: '新闻',
             description: '实时向您传递公司产品信息，展览动态及行业动态',
             icon: 'i-ph-puzzle-piece-duotone',
-            to: '/news/company',
+            to: '/news/company'
           },
           {
             label: '行业资讯',
             description: '行业动态资讯',
             icon: 'i-ph-rocket-launch-duotone',
-            to: '/news/hang',
-          },
-        ],
+            to: '/news/hang'
+          }
+        ]
       },
       {
         label: '案例',
         icon: 'i-ph-projector-screen-duotone',
-        to: '/showcase',
+        to: '/showcase'
       },
       {
         label: '服务支持',

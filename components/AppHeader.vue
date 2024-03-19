@@ -5,7 +5,7 @@ import type { Link } from '#ui-pro/types'
 const logo = ref(null)
 const navigation = inject<Ref<NavItem[]>>('navigation')
 
-const stats = useStats()
+// const stats = useStats()
 const { metaSymbol } = useShortcuts()
 const { copy } = useCopyToClipboard()
 
