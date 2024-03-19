@@ -58,13 +58,6 @@ const _useNavigation = () => {
         ]
       },
       {
-        label: '产品',
-        icon: 'i-ph-puzzle-piece-duotone',
-        search: false,
-        active: route.path.startsWith('/modules'),
-        to: '/modules'
-      },
-      {
         label: '案例',
         icon: 'i-ph-projector-screen-duotone',
         search: false,
