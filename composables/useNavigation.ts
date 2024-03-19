@@ -116,16 +116,16 @@ const _useNavigation = () => {
         {
           label: 'Facebook',
           to: 'https://www.facebook.com/syrincs',
-          target: '_blank',
+          target: '_blank'
         },
         {
           label: 'Youtube',
           to: 'https://www.youtube.com/@user-ms4bv3rc9f',
-          target: '_blank',
+          target: '_blank'
         },
         {
           label: 'Team',
-          to: '/team',
+          to: '/team'
         },
         {
           label: 'Design Kit',
@@ -222,7 +222,7 @@ const _useNavigation = () => {
           return []
         }
 
-        const { modules, fetchList } = useModules();
+        const { modules, fetchList } = useModules()
         if (!modules.value.length) {
           await fetchList()
         }
@@ -239,7 +239,7 @@ const _useNavigation = () => {
             label: module.name,
             suffix: module.description,
             avatar: {
-              src: moduleImage(module.icon),
+              src: moduleImage(module.icon)
             },
             to: `/modules/${module.name}`
           }))
@@ -253,7 +253,7 @@ const _useNavigation = () => {
           return []
         }
 
-        const { providers, fetchList } = useHostingProviders();
+        const { providers, fetchList } = useHostingProviders()
         if (!providers.value.length) {
           await fetchList()
         }
@@ -272,7 +272,7 @@ const _useNavigation = () => {
             icon: hosting.logoIcon,
             avatar: hosting.logoSrc
               ? {
-                  src: hosting.logoSrc,
+                  src: hosting.logoSrc
                 }
               : undefined,
             to: hosting._path
@@ -287,7 +287,7 @@ const _useNavigation = () => {
           return []
         }
 
-        const { articles, fetchList } = useBlog();
+        const { articles, fetchList } = useBlog()
         if (!articles.value.length) {
           await fetchList()
         }
@@ -303,7 +303,7 @@ const _useNavigation = () => {
           }))
       }
     }
-  ];
+  ]
 
   return {
     headerLinks,
