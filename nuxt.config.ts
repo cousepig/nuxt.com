@@ -74,6 +74,7 @@ export default defineNuxtConfig({
     '/blog/rss.xml': { prerender: true },
     // '/sitemap.xml': { prerender: true },
     '/newsletter': { prerender: true },
+    '/modules': { prerender: true },
     // Redirects
     // '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
     // '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
