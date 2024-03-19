@@ -106,8 +106,8 @@ const _useNavigation = () => {
           }
         ]
       }
-    ];
-  });
+    ]
+  })
 
   const footerLinks = [
     {
@@ -179,7 +179,7 @@ const _useNavigation = () => {
         }
       ]
     }
-  ];
+  ]
 
   const searchLinks = computed(() => [
     ...headerLinks.value
@@ -189,11 +189,11 @@ const _useNavigation = () => {
           return {
             label: link.label,
             icon: link.icon,
-            children: link.children,
-          };
+            children: link.children
+          }
         }
 
-        return link;
+        return link
       })
       .filter(Boolean),
     {
@@ -210,8 +210,8 @@ const _useNavigation = () => {
       label: 'Newsletter',
       icon: 'i-ph-envelope-simple-duotone',
       to: '/newsletter'
-    },
-  ]);
+    }
+  ])
 
   const searchGroups = [
     {
@@ -219,12 +219,12 @@ const _useNavigation = () => {
       label: 'Modules',
       search: async (q) => {
         if (!q) {
-          return [];
+          return []
         }
 
         const { modules, fetchList } = useModules();
         if (!modules.value.length) {
-          await fetchList();
+          await fetchList()
         }
 
         return modules.value
@@ -242,7 +242,7 @@ const _useNavigation = () => {
               src: moduleImage(module.icon),
             },
             to: `/modules/${module.name}`
-          }));
+          }))
       }
     },
     {
@@ -250,12 +250,12 @@ const _useNavigation = () => {
       label: 'Hosting',
       search: async (q) => {
         if (!q) {
-          return [];
+          return []
         }
 
         const { providers, fetchList } = useHostingProviders();
         if (!providers.value.length) {
-          await fetchList();
+          await fetchList()
         }
 
         return providers.value
@@ -275,21 +275,21 @@ const _useNavigation = () => {
                   src: hosting.logoSrc,
                 }
               : undefined,
-            to: hosting._path,
-          }));
-      },
+            to: hosting._path
+          }))
+      }
     },
     {
       key: 'articles-search',
       label: 'Articles',
       search: async (q) => {
         if (!q) {
-          return [];
+          return []
         }
 
         const { articles, fetchList } = useBlog();
         if (!articles.value.length) {
-          await fetchList();
+          await fetchList()
         }
 
         return articles.value
@@ -300,9 +300,9 @@ const _useNavigation = () => {
             suffix: article.description,
             icon: 'i-ph-newspaper',
             to: article._path
-          }));
-      },
-    },
+          }))
+      }
+    }
   ];
 
   return {
@@ -310,7 +310,7 @@ const _useNavigation = () => {
     footerLinks,
     searchLinks,
     searchGroups
-  };
-};
+  }
+}
 
-export const useNavigation = createSharedComposable(_useNavigation);
+export const useNavigation = createSharedComposable(_useNavigation)
