@@ -72,40 +72,40 @@ const _useNavigation = () => {
             label: '服务支持',
             to: '/enterprise/support',
             description: '从SYRINCS的团队获得帮助。',
-            icon: 'i-ph-lifebuoy-duotone',
+            icon: 'i-ph-lifebuoy-duotone'
           },
           {
             label: '资料下载',
             to: '/enterprise/download',
             description: '产品资料、说明书下载.',
-            icon: 'i-ph-handshake-duotone',
+            icon: 'i-ph-handshake-duotone'
           },
           {
             label: '软件下载',
             to: '/enterprise/soft',
             description: '',
-            icon: 'i-ph-handshake-duotone',
+            icon: 'i-ph-handshake-duotone'
           },
           {
             label: '视频课程',
             description: '通过观看视频课程学习',
             icon: 'i-ph-graduation-cap-duotone',
-            to: '/video-courses',
+            to: '/video-courses'
           },
           {
             label: '赞助商',
             to: '/enterprise/sponsors',
             description: '成为赞助商,并获得您的徽标和您的网站链接。',
-            icon: 'i-ph-hand-heart-duotone',
+            icon: 'i-ph-hand-heart-duotone'
           },
           {
             label: '社会招聘',
             to: '/enterprise/jobs',
             description: '寻找工作或发布工作机会。',
-            icon: 'i-ph-briefcase-duotone',
-          },
-        ],
-      },
+            icon: 'i-ph-briefcase-duotone'
+          }
+        ]
+      }
     ];
   });
 
@@ -129,30 +129,30 @@ const _useNavigation = () => {
         },
         {
           label: 'Design Kit',
-          to: '/design-kit',
-        },
-      ],
+          to: '/design-kit'
+        }
+      ]
     },
     {
       label: '品牌',
       children: [
         {
           label: '支持服务',
-          to: '/enterprise/support',
+          to: '/enterprise/support'
         },
         {
           label: 'Agencies',
-          to: '/enterprise/agencies',
+          to: '/enterprise/agencies'
         },
         {
           label: '社会招聘',
-          to: '/enterprise/jobs',
+          to: '/enterprise/jobs'
         },
         {
           label: '赞助商',
-          to: '/enterprise/sponsors',
-        },
-      ],
+          to: '/enterprise/sponsors'
+        }
+      ]
     },
     {
       label: '方案',
@@ -160,25 +160,25 @@ const _useNavigation = () => {
         {
           label: 'Party K',
           to: '/',
-          target: '_blank',
+          target: '_blank'
         },
         {
           label: '酒吧',
           to: '/',
-          target: '_blank',
+          target: '_blank'
         },
         {
           label: 'KTV',
           to: '/',
-          target: '_blank',
+          target: '_blank'
         },
         {
           label: '娱乐DJ',
           to: '/',
-          target: '_blank',
-        },
-      ],
-    },
+          target: '_blank'
+        }
+      ]
+    }
   ];
 
   const searchLinks = computed(() => [
@@ -199,17 +199,17 @@ const _useNavigation = () => {
     {
       label: '研发团队',
       icon: 'i-ph-users-duotone',
-      to: '/team',
+      to: '/team'
     },
     {
       label: '设计套件',
       icon: 'i-ph-palette-duotone',
-      to: '/design-kit',
+      to: '/design-kit'
     },
     {
       label: 'Newsletter',
       icon: 'i-ph-envelope-simple-duotone',
-      to: '/newsletter',
+      to: '/newsletter'
     },
   ]);
 
@@ -241,9 +241,9 @@ const _useNavigation = () => {
             avatar: {
               src: moduleImage(module.icon),
             },
-            to: `/modules/${module.name}`,
+            to: `/modules/${module.name}`
           }));
-      },
+      }
     },
     {
       key: 'hosting-search',
@@ -299,7 +299,7 @@ const _useNavigation = () => {
             label: article.title,
             suffix: article.description,
             icon: 'i-ph-newspaper',
-            to: article._path,
+            to: article._path
           }));
       },
     },
@@ -309,7 +309,7 @@ const _useNavigation = () => {
     headerLinks,
     footerLinks,
     searchLinks,
-    searchGroups,
+    searchGroups
   };
 };
 
