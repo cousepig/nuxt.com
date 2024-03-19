@@ -1,7 +1,7 @@
 navigation: false
 hero:
   cta:
-    label: Nuxt v3.11 is out
+    label: 最新产品
     to: /blog/v3-11
     variant: outline
     icon: i-ph-arrow-right
@@ -9,7 +9,7 @@ hero:
     trailing: true
     class: 'font-semibold hover:bg-primary-100 dark:hover:bg-primary-900 rounded-full'
 logos:
-  title: 'Trusted by the best front-end teams'
+  title: '受到更多用户的信任'
 sections:
   - title: 'The power of<br><span class="text-primary">Vue Components</span>'
     description: 'We love Vue Single-File Components as much as you do. Simple, intuitive and powerful, Nuxt lets you write Vue components in a way that makes sense. Every repetitive task is automated, so you can focus on writing your full-stack Vue application with confidence.'
@@ -103,7 +103,7 @@ sections:
       </template>
       ```
       ::
-  - title: 'Compose with<br><span class="text-primary">everything you need.</span>'
+  - title: '<span class="text-primary">产品中心</span>'
     class: 'dark:bg-gradient-to-b from-gray-900 to-gray-950'
     slot: features
     features:
@@ -155,7 +155,7 @@ sections:
         description: 'Nuxt provides helpful shortcuts to ensure you have access to accurate type information when you are coding.'
         icon: 'i-ph-file-ts-duotone'
         to: '/docs/guide/concepts/typescript'
-  - title: 'Ship faster with<br><span class="text-primary">endless integrations</span>'
+  - title: '<span class="text-primary">新闻资讯</span>'
     description: 'Integrate with your favorite tools and services. Nuxt is built to be flexible and can be extended with a robust modules ecosystem. Connect your application with popular headless CMS, eCommerce, Database or UI/UX libraries with a single line of code.'
     class: 'dark bg-gray-900 dark:!bg-gradient-to-b from-gray-950 to-gray-900'
     align: left
@@ -232,7 +232,7 @@ sections:
       - src: /assets/integrations/algolia.svg
         alt: Algolia
         to: /modules/algolia
-  - title: 'Built by developers<br><span class="text-primary">around the world.</span>'
+  - title: '<span class="text-primary">工程案例</span>'
     description: 'The development of Nuxt and its ecosystem is led by an international team. From contributors to developer advocates, the community is made up of members with different horizons and skills. We are happy to see new members every day and encourage anyone to join us and help in many ways: answering questions, giving a talk, creating modules and contributing to the core.'
     class: 'dark bg-gray-900'
     align: right
@@ -256,7 +256,7 @@ sections:
         size: md
         target: _blank
         to: 'https://x.com/nuxt_js'
-  - title: 'Trusted by the<br><span class="text-primary">World Wide Web.</span>'
+  - title: '<span class="text-primary">受广大用户的信赖</span>'
     class: 'dark:bg-gradient-to-b from-gray-900 to-gray-950'
     slot: testimonials
     align: center

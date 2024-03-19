@@ -5,8 +5,8 @@ const { data: page } = await useAsyncData('index', () => queryContent('/').findO
 const videoModalOpen = ref(false)
 
 const site = useSiteConfig()
-const title = 'Nuxt: The Intuitive Vue Framework'
-const description = 'Nuxt is an open source framework that makes web development intuitive and powerful. Create performant and production-grade full-stack web apps and websites with confidence.'
+const title = 'SYRINCS: 颜如玉 声入心'
+const description = 'SYRINCS,延承了德國設計的嚴謹與厚實,體現在其音色之中,在音色的設計中使用一種十分嚴密的數學秩序,其音色充滿嚴謹的理性主義色彩魅力。'
 useSeoMeta({
   title,
   ogTitle: title,
@@ -29,21 +29,19 @@ useSeoMeta({
       </template>
 
       <template #title>
-        The Intuitive<br><span class="text-primary block lg:inline-block">Vue Framework</span>
+        颜如玉<br><span class="text-primary block lg:inline-block">声入心</span>
       </template>
 
       <template #description>
-        Nuxt is an <NuxtLink to="https://github.com/nuxt/nuxt" target="_blank">
-          open source framework
-        </NuxtLink> that makes web development intuitive and powerful.<br>Create performant and production-grade full-stack web apps and websites with confidence.
+        SYRINCS,延承了德國設計的嚴謹與厚實,體現在其音色之中,在音色的設計中使用一種十分嚴密的數學秩序,其音色充滿嚴謹的理性主義色彩魅力。
       </template>
 
       <template #links>
-        <UButton to="/docs/getting-started/installation" icon="i-ph-rocket-launch-duotone" size="xl">
-          Get Started
+        <UButton to="/modules" icon="i-ph-rocket-launch-duotone" size="xl">
+          了解产品
         </UButton>
         <UButton size="xl" color="white" icon="i-ph-video-duotone" @click="videoModalOpen = true">
-          What is Nuxt?
+          关于SYRINCS
         </UButton>
 
         <UModal v-model="videoModalOpen">
