@@ -7,18 +7,18 @@ const { data: page } = await useAsyncData(route.path, () => queryContent(route.p
 const title = page.value.head?.title || page.value.title
 const description = page.value.head?.description || page.value.description
 useSeoMeta({
-  titleTemplate: '%s · Enterprise',
+  titleTemplate: '%s · Syrincs',
   title,
   description,
   ogDescription: description,
-  ogTitle: `${title} · Enterprise`
+  ogTitle: `${title} · Syrincs`
 })
 
 defineOgImage({
   component: 'Docs',
   title,
   description,
-  headline: 'Enterprise'
+  headline: 'Syrincs'
 })
 
 await fetchList()
