@@ -144,7 +144,7 @@ export default eventHandler(async (event) => {
             'web-vitals',
             'windicss'
           ]
-        },
+        }
 
       ],
       'modules': [
@@ -199,7 +199,7 @@ export default eventHandler(async (event) => {
               'contributions': 1
             }
           ]
-        },
+        }
 
       ]
     }

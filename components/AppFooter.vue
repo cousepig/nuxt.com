@@ -19,16 +19,16 @@ const { footerLinks } = useNavigation()
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © 2016-{{ new Date().getFullYear() }} SYRINCS - <NuxtLink class="hover:underline" to="https://github.com/nuxt/nuxt/blob/main/LICENSE" target="_blank">
+        Copyright © 2016-{{ new Date().getFullYear() }} SYRINCS - <NuxtLink class="hover:underline" to="https://github.com/syrincs/syrincs/blob/main/LICENSE" target="_blank">
           MIT License
         </NuxtLink>
       </p>
     </template>
 
     <template #right>
-      <UButton aria-label="Nuxt on X" to="https://x.com/nuxt_js" target="_blank" icon="i-simple-icons-x" v-bind="($ui.button.secondary as any)" />
-      <UButton aria-label="Nuxt on Discord" to="https://discord.com/invite/nuxt" target="_blank" icon="i-simple-icons-discord" v-bind="($ui.button.secondary as any)" />
-      <UButton aria-label="Nuxt on GitHub" to="https://github.com/nuxt/nuxt" target="_blank" icon="i-simple-icons-github" v-bind="($ui.button.secondary as any)" />
+      <UButton aria-label="Syrincs on X" to="https://x.com/syrincs" target="_blank" icon="i-simple-icons-x" v-bind="($ui.button.secondary as any)" />
+      <UButton aria-label="Syrincs on Youtube" to="https://www.youtube.com" target="_blank" icon="i-simple-icons-youtube" v-bind="($ui.button.secondary as any)" />
+      <UButton aria-label="Syrincs on Facebook" to="https://www.facebook.com" target="_blank" icon="i-simple-icons-facebook" v-bind="($ui.button.secondary as any)" />
     </template>
   </UFooter>
 </template>
