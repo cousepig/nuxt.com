@@ -5,119 +5,97 @@ const _useNavigation = () => {
     const route = useRoute()
 
     return [{
-      label: 'Docs',
+      label: '品牌',
       icon: 'i-ph-book-bookmark-duotone',
-      to: '/docs',
+      to: '/brand',
       search: false,
       children: [{
-        label: 'Get Started',
-        description: 'Learn how to get started with Nuxt.',
+        label: '关于SYRINCS',
+        description: '1981年,SYRINCS专业音响品牌由Wolfgang bartsch博士、Conrad Schucht和Jürgen Eggeling创建于德国柏林。',
         icon: 'i-ph-rocket-launch-duotone',
-        to: '/docs/getting-started',
-        active: route.path.startsWith('/docs/getting-started')
+        to: '/brand/about',
+        active: route.path.startsWith('/brand/about')
       }, {
-        label: 'Guide',
-        description: 'Learn how to build and deploy Nuxt applications.',
+        label: '品牌历程',
+        description: 'SYRINCS,德国的音色,在音色的使用设计中使用壹种十分严密的数学秩序。',
         icon: 'i-ph-book-open-duotone',
-        to: '/docs/guide',
-        active: route.path.startsWith('/docs/guide')
+        to: '/brand/history',
+        active: route.path.startsWith('/brand/history')
       }, {
-        label: 'API',
-        description: 'Explore the Nuxt API.',
+        label: '品牌概述',
+        description: 'SYRINCS专业音响品牌,用于安装或移动、室内或室外、大型或小型, SYRINCS音箱、控制电子设备、机械附件和远程控制装置可完全满足各种应用条件及恶劣的气候环境。',
         icon: 'i-ph-code',
-        to: '/docs/api',
-        active: route.path.startsWith('/docs/api')
-      }, {
-        label: 'Examples',
-        description: 'Discover and explore official and community examples.',
-        icon: 'i-ph-app-window-duotone',
-        to: '/docs/examples',
-        active: route.path.startsWith('/docs/examples')
-      }, {
-        label: 'Community',
-        description: 'Find answers and support from the community.',
-        icon: 'i-ph-chats-teardrop-duotone',
-        to: '/docs/community',
-        active: route.path.startsWith('/docs/community')
+        to: '/brand/intro',
+        active: route.path.startsWith('/brand/intro')
       }]
     }, {
-      label: 'Integrations',
-      to: '/modules',
+      label: '新闻',
+      to: '/news',
       search: false,
-      active: route.path.startsWith('/modules') || route.path.startsWith('/deploy'),
+      active: route.path.startsWith('/news') ,
       children: [{
-        label: 'Modules',
-        description: 'Supercharge your Nuxt project with modules.',
+        label: '新闻',
+        description: '实时向您传递公司产品信息，展览动态及行业动态',
         icon: 'i-ph-puzzle-piece-duotone',
-        to: '/modules'
+        to: '/news/company'
       }, {
-        label: 'Hosting',
-        description: 'Deploy your Nuxt project anywhere.',
+        label: '行业资讯',
+        description: '行业动态资讯',
         icon: 'i-ph-rocket-launch-duotone',
-        to: '/deploy'
+        to: '/news/hang'
       }]
-    }, {
-      label: 'Resources',
-      to: '/templates',
-      search: false,
-      active: route.path.startsWith('/templates') || route.path.startsWith('/video-courses'),
-      children: [{
-        label: 'Templates',
-        icon: 'i-ph-browsers-duotone',
-        description: 'Start your next project with a Nuxt template.',
-        to: '/templates'
-      }, {
-        label: 'Video Courses',
-        description: 'Learn Nuxt by watching video courses.',
-        icon: 'i-ph-graduation-cap-duotone',
-        to: '/video-courses'
-      }]
-    }, {
-      label: 'Showcase',
+    },{
+      label: '案例',
       icon: 'i-ph-projector-screen-duotone',
       to: '/showcase'
     }, {
-      label: 'Enterprise',
+      label: '服务支持',
       icon: 'i-ph-buildings-duotone',
       to: '/enterprise',
       search: false,
       children: [{
-        label: 'Support',
+        label: '服务支持',
         to: '/enterprise/support',
-        description: 'Get help with Nuxt.js directly from the team that creates it.',
+        description: '从SYRINCS的团队获得帮助。',
         icon: 'i-ph-lifebuoy-duotone'
       }, {
-        label: 'Agencies',
-        to: '/enterprise/agencies',
-        description: 'Find an agency that specializes in Nuxt.js development.',
+        label: '资料下载',
+        to: '/enterprise/download',
+        description: '产品资料、说明书下载.',
         icon: 'i-ph-handshake-duotone'
       }, {
-        label: 'Sponsors',
+        label: '软件下载',
+        to: '/enterprise/soft',
+        description: '',
+        icon: 'i-ph-handshake-duotone'
+      }, {
+        label: '视频课程',
+        description: '通过观看视频课程学习',
+        icon: 'i-ph-graduation-cap-duotone',
+        to: '/video-courses'
+      }, {
+        label: '赞助商',
         to: '/enterprise/sponsors',
-        description: 'Become a sponsor and get your logo on our README on GitHub with a link to your site.',
+        description: '成为赞助商,并获得您的徽标和您的网站链接。',
         icon: 'i-ph-hand-heart-duotone'
       }, {
-        label: 'Jobs',
+        label: '社会招聘',
         to: '/enterprise/jobs',
-        description: 'Find a job or post a job opportunity for Nuxt.js experts.',
+        description: '寻找工作或发布工作机会。',
         icon: 'i-ph-briefcase-duotone'
       }]
-    }, {
-      label: 'Blog',
-      icon: 'i-ph-newspaper-duotone',
-      to: '/blog'
     }]
   })
 
   const footerLinks = [{
-    label: 'Community',
+    label: '社群',
     children: [{
-      label: 'Nuxters',
-      to: 'https://nuxters.nuxt.com',
+      label: 'Facebook',
+      to: 'https://www.facebook.com/syrincs',
       target: '_blank'
     }, {
-      label: 'Nuxt on GitHub',
-      to: 'https://github.com/nuxt',
+      label: 'Youtube',
+      to: 'https://www.youtube.com/@user-ms4bv3rc9f',
       target: '_blank'
     }, {
       label: 'Team',
@@ -127,37 +105,37 @@ const _useNavigation = () => {
       to: '/design-kit'
     }]
   }, {
-    label: 'Enterprise',
+    label: '品牌',
     children: [{
-      label: 'Support',
+      label: '支持服务',
       to: '/enterprise/support'
     }, {
       label: 'Agencies',
       to: '/enterprise/agencies'
     }, {
-      label: 'Jobs',
+      label: '社会招聘',
       to: '/enterprise/jobs'
     }, {
-      label: 'Sponsors',
+      label: '赞助商',
       to: '/enterprise/sponsors'
     }]
   }, {
-    label: 'Solutions',
+    label: '方案',
     children: [{
-      label: 'Nuxt Content',
-      to: 'https://content.nuxt.com/',
+      label: 'Party K',
+      to: '/',
       target: '_blank'
     }, {
-      label: 'Nuxt DevTools',
-      to: 'https://devtools.nuxt.com/',
+      label: '酒吧',
+      to: '/',
       target: '_blank'
     }, {
-      label: 'Nuxt Image',
-      to: 'https://image.nuxt.com/',
+      label: 'KTV',
+      to: '/',
       target: '_blank'
     }, {
-      label: 'Nuxt UI',
-      to: 'https://ui.nuxt.com/',
+      label: '娱乐DJ',
+      to: '/',
       target: '_blank'
     }]
   }]
@@ -174,11 +152,11 @@ const _useNavigation = () => {
 
     return link
   }).filter(Boolean), {
-    label: 'Team',
+    label: '研发团队',
     icon: 'i-ph-users-duotone',
     to: '/team'
   }, {
-    label: 'Design Kit',
+    label: '设计套件',
     icon: 'i-ph-palette-duotone',
     to: '/design-kit'
   }, {

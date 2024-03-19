@@ -69,32 +69,34 @@ export default defineNuxtConfig({
     // Pre-render
     '/api/search.json': { prerender: true },
     '/api/templates.json': { prerender: true },
+    '/api/showcase.json': { prerender: true },
+    '/api/sponsors.json': { prerender: true },
     '/blog/rss.xml': { prerender: true },
     // '/sitemap.xml': { prerender: true },
     '/newsletter': { prerender: true },
     // Redirects
-    '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
-    '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
-    '/docs/guide/concepts': { redirect: '/docs/guide/concepts/auto-imports', prerender: false },
-    '/docs/guide/directory-structure': { redirect: '/docs/guide/directory-structure/app', prerender: false },
-    '/docs/guide/going-further': { redirect: '/docs/guide/going-further/experimental-features', prerender: false },
-    '/docs/guide/going-further/edge-release-channel': { redirect: '/docs/guide/going-further/nightly-release-channel', prerender: false },
-    '/docs/bridge': { redirect: '/docs/bridge/overview', prerender: false },
-    '/docs/migration': { redirect: '/docs/migration/overview', prerender: false },
-    '/docs/api/components': { redirect: '/docs/api/components/client-only', prerender: false },
-    '/docs/api/composables': { redirect: '/docs/api/composables/use-app-config', prerender: false },
-    '/docs/api/utils': { redirect: '/docs/api/utils/dollarfetch', prerender: false },
-    '/docs/api/kit': { redirect: '/docs/api/kit/modules', prerender: false },
-    '/docs/api/commands': { redirect: '/docs/api/commands/dev', prerender: false },
-    '/docs/api/advanced': { redirect: '/docs/api/advanced/hooks', prerender: false },
-    '/docs/api/configuration/nuxt-config': { redirect: '/docs/api/nuxt-config', prerender: false },
-    '/docs/examples': { redirect: '/docs/examples/hello-world', prerender: false },
-    '/docs/examples/features': { redirect: '/docs/examples/features/auto-imports', prerender: false },
-    '/docs/examples/routing': { redirect: '/docs/examples/routing/middleware', prerender: false },
-    '/docs/examples/advanced': { redirect: '/docs/examples/advanced/config-extends', prerender: false },
-    '/docs/examples/experimental': { redirect: '/docs/examples/experimental/wasm', prerender: false },
-    '/docs/community': { redirect: '/docs/community/getting-help', prerender: false },
-    '/docs/community/nuxt-community': { redirect: '/docs/community/getting-help', prerender: false },
+    // '/docs': { redirect: '/docs/getting-started/introduction', prerender: false },
+    // '/docs/getting-started': { redirect: '/docs/getting-started/introduction', prerender: false },
+    // '/docs/guide/concepts': { redirect: '/docs/guide/concepts/auto-imports', prerender: false },
+    // '/docs/guide/directory-structure': { redirect: '/docs/guide/directory-structure/app', prerender: false },
+    // '/docs/guide/going-further': { redirect: '/docs/guide/going-further/experimental-features', prerender: false },
+    // '/docs/guide/going-further/edge-release-channel': { redirect: '/docs/guide/going-further/nightly-release-channel', prerender: false },
+    // '/docs/bridge': { redirect: '/docs/bridge/overview', prerender: false },
+    // '/docs/migration': { redirect: '/docs/migration/overview', prerender: false },
+    // '/docs/api/components': { redirect: '/docs/api/components/client-only', prerender: false },
+    // '/docs/api/composables': { redirect: '/docs/api/composables/use-app-config', prerender: false },
+    // '/docs/api/utils': { redirect: '/docs/api/utils/dollarfetch', prerender: false },
+    // '/docs/api/kit': { redirect: '/docs/api/kit/modules', prerender: false },
+    // '/docs/api/commands': { redirect: '/docs/api/commands/dev', prerender: false },
+    // '/docs/api/advanced': { redirect: '/docs/api/advanced/hooks', prerender: false },
+    // '/docs/api/configuration/nuxt-config': { redirect: '/docs/api/nuxt-config', prerender: false },
+    // '/docs/examples': { redirect: '/docs/examples/hello-world', prerender: false },
+    // '/docs/examples/features': { redirect: '/docs/examples/features/auto-imports', prerender: false },
+    // '/docs/examples/routing': { redirect: '/docs/examples/routing/middleware', prerender: false },
+    // '/docs/examples/advanced': { redirect: '/docs/examples/advanced/config-extends', prerender: false },
+    // '/docs/examples/experimental': { redirect: '/docs/examples/experimental/wasm', prerender: false },
+    // '/docs/community': { redirect: '/docs/community/getting-help', prerender: false },
+    // '/docs/community/nuxt-community': { redirect: '/docs/community/getting-help', prerender: false },
     // '/docs/guide/directory-structure/nuxt.config': { redirect: '/docs/guide/directory-structure/nuxt-config', prerender: false },
     '/enterprise': { redirect: '/enterprise/support', prerender: false }
   },
@@ -118,7 +120,7 @@ export default defineNuxtConfig({
   hooks: {
     async 'prerender:routes' (ctx) {
       // Add Nuxt 2 modules to the prerender list
-      const { modules } = await ofetch<{ modules: [] }>('https://api.nuxt.com/modules?version=2').catch(() => ({ modules: [] }))
+      const { modules } = await ofetch<{ modules: [] }>('https://syrincs-com.vercel.app/api/showmodule.json').catch(() => ({ modules: [] }))
       for (const module of modules) {
         ctx.routes.add(`/modules/${module.name}`)
       }

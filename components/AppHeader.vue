@@ -85,7 +85,7 @@ defineProps<{
         <UColorModeButton />
       </UTooltip>
 
-      <UTooltip text="GitHub Stars">
+      <!-- <UTooltip text="GitHub Stars">
         <UButton
           icon="i-simple-icons-github"
           to="https://github.com/nuxt/nuxt"
@@ -93,7 +93,7 @@ defineProps<{
           :label="stats ? formatNumber(stats.stars) : '...'"
           v-bind="($ui.button.secondary as any)"
         />
-      </UTooltip>
+      </UTooltip> -->
     </template>
 
     <template #panel>

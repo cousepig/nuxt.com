@@ -52,7 +52,7 @@ export const useModules = () => {
       return
     }
 
-    const res = await $fetch<{ modules: Module[] }>('https://api.nuxt.com/modules')
+    const res = await $fetch<{ modules: Module[] }>('https://syrincs-com.vercel.app/api/showmodule.json')
     if (res?.modules) {
       modules.value = res.modules
     }

@@ -23,7 +23,7 @@ export const useEnterpriseJobs = () => {
       return
     }
 
-    const res = await $fetch<Job[]>('https://api.nuxt.com/jobs')
+    const res = await $fetch<Job[]>('https://syrincs-com.vercel.app/api/jobs.json')
 
     jobs.value = res.map((job) => {
       return { ...job, remote: mapRemote(job.remote), published_at: toRelativeDate(job.published_at) }
