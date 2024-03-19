@@ -1,7 +1,7 @@
-head.title: Nuxt Video Courses
-title: Nuxt Video Courses
-navigation.title: Video Courses
-description: 'Watch video courses from the community to learn Vue 3 and Nuxt 3.'
+head.title: SYRINCS 视频课程
+title: SYRINCS 视频课程
+navigation.title: 视频课程
+description: '观看社区视频课程,学习SYRINCS 产品使用.'
 navigation.icon: i-ph-graduation-cap-duotone
 courses:
   - name: 'Nuxt 3 Fundamentals'

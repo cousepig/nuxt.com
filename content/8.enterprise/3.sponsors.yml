@@ -1,11 +1,6 @@
-title: Nuxt Sponsors
-description: Nuxt is an open-source framework totally free to use thanks to our generous sponsors. If you use Nuxt in your daily work and feel that it has made your life easier, please consider backing us.
-navigation.title: Sponsors
-head.description: Nuxt is an open-source framework totally free to use thanks to our generous sponsors.
+title: SYRINCS 赞助商
+description: 如果您在日常工作中使用,并觉得它让您的生活更轻松,请考虑支持我们。
+navigation.title: 赞助商
+head.description: SYRINCS 是一个完全免费使用的开源框架。
 navigation.icon: i-ph-hand-heart-duotone
-links:
-  - label: 'Become a sponsor'
-    to: 'https://github.com/sponsors/nuxt'
-    color: 'black'
-    size: 'lg'
-    target: '_blank'
+

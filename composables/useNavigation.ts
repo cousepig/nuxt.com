@@ -58,6 +58,11 @@ const _useNavigation = () => {
         ]
       },
       {
+        label: '产品',
+        icon: 'i-ph-projector-screen-duotone',
+        to: '/modules'
+      },
+      {
         label: '案例',
         icon: 'i-ph-projector-screen-duotone',
         to: '/showcase'

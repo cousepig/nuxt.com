@@ -68,13 +68,7 @@ await fetchList()
             size="md"
             @click="$router.replace({ query: {} })"
           />
-          <UButton
-            to="https://docs.google.com/forms/d/e/1FAIpQLSf85qskit5QqmGJcruGkGF0U7240Bh9MeN0pHB18UiOMWC8dA/viewform"
-            target="_blank"
-            color="black"
-            size="md"
-            label="Submit my agency"
-          />
+        
         </EmptyCard>
       </UPageBody>
     </UPage>
