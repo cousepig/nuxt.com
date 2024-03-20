@@ -12,7 +12,7 @@ export const useBlog = () => {
     }
 
     try {
-      const data = await queryContent<BlogArticle>('/blog')
+      const data = await queryContent<BlogArticle>('/news')
         .where({ _extension: 'md' })
         .without(['body', 'excerpt'])
         .sort({ date: -1 })

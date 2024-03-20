@@ -48,9 +48,9 @@ The logo is made from two elements: the triangular mountains and the wordmark. I
   :design-kit-image-card{path="logo-green-black" name="Green & black" background="bg-white" full}
 ::
 
-## Color Palette
+## 调色板
 
-Our color palette is based on our iconic SYRINCS green and colours have been carefully considered to work in harmony and consistency across various media. When creating SYRINCS communications, use the colour values shown to make sure your designs stay on-brand.
+我们的调色板以标志性的SYRINCS绿色为基础,经过仔细考虑,各种颜色在各种媒体中和谐一致。在创建SYRINCS时,使用显示的颜色值来确保您的设计符合品牌要求。
 
 ::u-page-grid
   :design-kit-color-card{background="#00DC82" name="Green"}
