@@ -47,10 +47,10 @@ defineOgImage({
               <UAvatar v-bind="user.avatar" size="3xl" class="mx-auto" />
             </template>
 
-            <div class="flex items-center justify-center gap-1.5 mt-4">
+            <!-- <div class="flex items-center justify-center gap-1.5 mt-4">
               <UButton v-for="(link, i) in user.links" :key="i" color="gray" variant="link" v-bind="link" />
-            </div>
-            <div v-if="user.sponsor" class="flex items-center justify-center mt-4">
+            </div> -->
+            <!-- <div v-if="user.sponsor" class="flex items-center justify-center mt-4">
               <UButton
                 :to="user.sponsor"
                 target="_blank"
@@ -61,7 +61,7 @@ defineOgImage({
               >
                 Sponsor
               </UButton>
-            </div>
+            </div> -->
           </UPageCard>
         </UPageGrid>
       </UPageBody>

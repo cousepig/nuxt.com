@@ -1,99 +1,31 @@
 ---
-title: Azure
-description: 'Deploy your Nuxt Application to Azure infrastructure.'
+title: 关于SYRINCS
+description: '1981年,SYRINCS专业音响品牌由Wolfgang bartsch博士、Conrad Schucht和Jürgen Eggeling创建于德国柏林。'
 logoIcon: 'i-logos-azure-icon'
-category: Hosting
-nitroPreset: 'azure'
-website: 'https://azure.microsoft.com/en-us/services/app-service/static/'
+category: 品牌
+nitroPreset: 'Syrincs'
+website: '/brand/about'
 ---
 
-## Azure Static Web Apps
 
-::tip
-**Zero Configuration ✨**
-:br
-Integration with Azure Static Web Apps provider is possible with zero configuration, [learn more](https://nitro.unjs.io/deploy#zero-config-providers).
-::
+### 概述
 
-Azure Static Web Apps are designed to be deployed continuously in a [GitHub Actions workflow](https://docs.microsoft.com/en-us/azure/static-web-apps/github-actions-workflow). By default, Nuxt will detect this deployment environment to enable the `azure` preset.
+SYRINCS，延承了德国设计的严谨与厚实，体现在其音色之中，在音色的设计中使用一种十分严密的数学秩序，其音色充满严谨的理性主义色彩魅力。
 
-### Local preview
+SYRINCS，是建立在理性基础上的艺术，以壹种不可思议的方式具体化，给抽象赋予了现实的存在，带给我们的脸上满意的笑容。
 
-Install [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local) if you want to test locally.
+### 技术特点
 
-You can invoke a development environment to preview before deploying.
+SYRINCS扬声器具有超强的指向性控制能力，通过合理的音响设计，有效的避免对天花/侧墙造成过多的反射，提高直达声能比，提升清晰度，配合扬声器中性的声音特性，音乐表现力强、还原度极高，适合不同音乐类型扩声需求；组成阵列后的扬声器系统拥有特别高且可控制Q值，声音在水平覆盖面上产生恒定方向覆盖。
 
-```bash [Terminal]
-npx nuxi build --preset=azure
-npx @azure/static-web-apps-cli start .output/public --api-location .output/server
-```
+SYRINCS低频扬声器低频设计低频指向性的多格短号角声透镜，在提高声压的同时降低了发射声对清晰度的影响，覆盖区域声场均衡。
 
-### Configuration
+功放系统为SYRINCS配套系统， 数字功放系统同时具有数字和模拟信号输入接口，使系统信号通过两种方式接入后级；同时数字接口可满足使扩声系统从拾音到还音只经过壹次A/D、D/A转换的条件，从而进壹步提高声音的高保真度。
 
-Azure Static Web Apps are [configured](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration) using the `staticwebapp.config.json` file.
+SYRINCS产品在保证系统性能的前提，还追求扩音品质和精度。因此，SYRINCS的扬声器都配套其同品牌下专用的功放推动，功放内置详细扬声器调整参数，以达到最大化的匹配度，以保证其音响系统长期工作在最佳状态下。
 
-Nuxt automatically generates this configuration file whenever the application is built with the `azure` preset.
+## 阅读更多
 
-It adds the following properties based on the following criteria:
-
-| Property | Criteria | Default |
-| --- | --- | --- |
-| **[platform.apiRuntime](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#platform)** | Will automatically set to `node:16` or `node:14` depending on your package configuration. | `node:16` |
-| **[navigationFallback.rewrite](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#fallback-routes)** | Is always `/api/server` | `/api/server` |
-| **[routes](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#routes)** | All prerendered routes are added. Additionally, if you do not have an `index.html` file an empty one is created for you for compatibility purposes and also requests to `/index.html` are redirected to the root directory which is handled by `/api/server`.  | `[]` |
-
-### Custom Configuration
-
-You can alter the generated configuration using `azure.config` option. For instance, if you wanted to specify a Node runtime for your Azure Functions, edit your `nuxt.config.ts` file to the following:
-
-```ts [nuxt.config.ts]
-export default defineNuxtConfig({
-  // ...
-  nitro: {
-    azure: {
-      config: {
-        // ...
-        platform: {
-          apiRuntime: 'node:18'
-        }
-      }
-    }
-  }
-})
-```
-
-Custom routes will be added and matched first. In the case of a conflict (determined if an object has the same route property), custom routes will override generated ones.
-
-### Deploy from CI/CD via GitHub Actions
-
-When you link your GitHub repository to Azure Static Web Apps, a workflow file is added to the repository.
-
-When you are asked to select your framework, select custom and provide the following information:
-
-| Input | Value |
-| --- | --- |
-| **app_location** | '/' |
-| **api_location** | '.output/server' |
-| **output_location** | '.output/public' |
-
-If you miss this step, you can always find the build configuration section in your workflow and update the build configuration:
-
-```yaml [.github/workflows/azure-static-web-apps-<RANDOM_NAME>.yml]
-###### Repository/Build Configurations ######
-app_location: '/'
-api_location: '.output/server'
-output_location: '.output/public'
-###### End of Repository/Build Configurations ######
-```
-
-::alert
-That's it! Now Azure Static Web Apps will automatically deploy your Nitro-powered application on push.
-::
-
-If you are using `runtimeConfig`, you will likely want to configure the corresponding [environment variables on Azure](https://docs.microsoft.com/en-us/azure/static-web-apps/application-settings).
-
-## More options
-
-::read-more{to="https://nitro.unjs.io/deploy/providers/azure" target="_blank"}
-Learn about the other Azure deployment presets on Nitro documentation.
+::read-more{to="/brand/history" target="_blank"}
+Syrincs 品牌历程
 ::

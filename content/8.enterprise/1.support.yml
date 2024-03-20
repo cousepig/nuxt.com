@@ -1,26 +1,26 @@
-title: 'Nuxt Professional Services'
-navigation.title: 'Support'
-description: 'Get professional support by Vue and Nuxt experts to achieve your objectives and overcome any challenge. <br/> We provide expertise and guidance to companies using Vue and Nuxt, including assistance with project architecture, performance optimization, best practices, and troubleshooting.'
-head.title: 'Nuxt professional services'
-head.description: 'Get professional support by the Nuxt team to achieve your objectives and overcome any challenge.'
+title: 'SYRINCS 支持服务'
+navigation.title: '支持服务'
+description: '获得SYRINCS专家的专业支持,以实现您的目标并克服任何挑战<br/>我们为使用SYRINCS的公司提供专业知识和指导,包括项目架构、性能优化、最佳实践和故障排除方面的帮助。'
+head.title: 'SYRINCS 支持服务'
+head.description: '获得SYRINCS团队的专业支持,以实现您的目标并克服任何挑战。'
 navigation.icon: i-ph-lifebuoy-duotone
 form:
   name:
-    label: 'Name'
+    label: '姓名'
     placeholder: 'John Doe'
   email:
-    label: 'Company Email'
+    label: '公司邮箱'
     placeholder: 'you@example.com'
   company:
-    label: 'Company'
+    label: '公司'
     placeholder: 'Your company name'
   body:
-    label: 'What can we help you achieve?'
-    placeholder: 'Tell us how we can help you'
+    label: '我们能帮助您实现什么目标？'
+    placeholder: '告诉我们如何帮助您'
   info: 'By submitting this form, I confirm that I have read and understood the <a class="text-gray-950 dark:text-gray-100 underline font-medium">Nuxt Privacy Statement.</a>'
   button:
     icon: i-ph-paper-plane-right-duotone
-    label: 'Send message'
+    label: '发信息'
 call:
   description: >-
     ## Talk to us

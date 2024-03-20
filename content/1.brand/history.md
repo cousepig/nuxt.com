@@ -1,31 +1,51 @@
 ---
-title: Cleavr
-description: 'Deploy your Nuxt Application to Cleavr infrastructure.'
+title: 品牌历程
+description: 'SYRINCS,德国的音色,在音色的使用设计中使用壹种十分严密的数学秩序。'
 logoSrc: '/assets/integrations/cleavr.svg'
-category: Hosting
-nitroPreset: 'cleavr'
-website: 'https://cleavr.io/'
+category: 品牌
+nitroPreset: 'Syrincs'
+website: '/brand/history'
 ---
 
-::tip
-**Zero Configuration ✨**
-:br
-Integration with this provider is possible with zero configuration, [learn more](https://nitro.unjs.io/deploy#zero-config-providers).
-::
 
-## Setup
+SYRINCS，德国的音色，在音色的使用设计中使用壹种十分严密的数学秩序。这种惊人的数学秩序，并不是枯燥，而是带给我们的脸上满意的笑容；
 
-**In your [Cleavr.io](https://cleavr.io/) panel:**
+SYRINCS，建立在壹种理性基础上的艺术，以壹种不可思议的方式具体化，给抽象赋予了现实的存在。
 
-1. Provision a new server
-2. Add a website, selecting **Nuxt 3** as the app type
-3. In web app > settings > Code Repo, point to your project's code repository
-4. In web app > settings > Environment variables, set `SERVER_PRESET=cleavr`
+## 1981年
 
-You're now all set to deploy your project!
+由Wolfgang bartsch博士、Conrad Schucht和Jürgen Eggeling创立了Syrincs 品牌。
+## 1990年
 
-## Learn more
+推出Club122双12英寸低音+ 2英寸中高音组合的被动式扬声器系统[1] ，它配置了EV DH1压缩驱动器配合HP9号角和2只DL12X低音单元。
+## 1991年
 
-::read-more{to="https://nitro.unjs.io/deploy/providers/cleavr" target="_blank"}
-Head over **Nitro documentation** to learn more about the cleavr deployment preset.
-::
+推出新的“MPA”扬声器系统：由单18英寸低频[2] 扬声和10英寸+ 2英寸的号角式卫星箱组成。卫星箱采用EV dym1搭配HP940号角以及最新开发的EVM10波导。
+
+## 1993年
+
+推出“S3”扬声器系统，它是壹个紧凑型高声压级帕设计，并在音响发展史上首创（15和18）双倒相管低频扬声器设计，带来无与伦比的瞬态响应和非常紧凑的卫星扬声器。
+## 1994年
+
+推出大型会所使用的Eurosub双18英寸低频扬声器系统和Spirit 212双12低频+1中高音的扬声音系统，它外观采用楔形箱系列结构以满足中型扩声场所的需求。
+## 1996年
+
+推出与S3扬声器系统相同的优点的适用于音乐家和DJ的更紧凑版本“S2”。
+## 1997年
+
+推出的“MusicMate”系列丰富了扬声器产品线，它“楔前叶”的外观显得更为现代时尚。MusicMate的低频扬声器还可作为高声压级的汽车音响低音炮使用。
+## 2000年
+
+推出的M3-220DT壹直畅销至今，它具有非常紧凑的设计和多功能的用途。它由M3有源音箱卫星扬声器和8“有源双倒相管低频扬声器组成，M3为双4英寸低音+ 1英寸丝膜顶球顶高音的有源扬声器系统。
+## 2001年
+
+推出的H5.1家庭影院环绕扬声器系统是M3有源卫星扬声器的无源音箱版本。
+## 2006年
+
+引推出了Odaiko 高端Hi-Fi低音炮，它采用了3只12英寸双倒相管设计。
+## 2014年
+
+专业音频品牌SYRINCS，全线进入中国市场。
+## 2018年
+
+推出采用独特的中频相位校正技术的FOCUS系列音箱，专为歌者演唱而设计的频率响应，具有明亮的中高频区音质和低音衰减，使人声表现更出彩。

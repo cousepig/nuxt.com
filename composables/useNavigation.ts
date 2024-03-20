@@ -148,8 +148,8 @@ const _useNavigation = () => {
           to: '/enterprise/support'
         },
         {
-          label: 'Agencies',
-          to: '/enterprise/agencies'
+          label: '资料下载',
+          to: '/enterprise/download'
         },
         {
           label: '社会招聘',

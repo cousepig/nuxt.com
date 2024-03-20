@@ -2,11 +2,11 @@
 defineProps({
   label: {
     type: String,
-    default: 'Subscribe to our newsletter'
+    default: '订阅我们的新闻'
   },
   description: {
     type: String,
-    default: 'Stay updated on new releases and features, guides, and community updates.'
+    default: '随时了解新产品和技术、指南和社区更新。'
   }
 })
 
@@ -23,11 +23,11 @@ function onSubmit () {
     method: 'POST',
     body: { email: email.value }
   }).then(() => {
-    toast.add({ title: 'Subscription pending', description: 'Please check your emails to confirm your subscription.', color: 'green' })
+    toast.add({ title: '订阅中', description: '请检查您的电子邮件以确认您的订阅。', color: 'green' })
     email.value = ''
   }).catch((err) => {
-    const description = err.data?.message || 'Something went wrong. Please try again later.'
-    toast.add({ title: 'Subscription failed', description, color: 'red' })
+    const description = err.data?.message || '出了问题。请稍后再试。'
+    toast.add({ title: '订阅失败', description, color: 'red' })
   }).finally(() => {
     loading.value = false
   })
@@ -47,7 +47,7 @@ function onSubmit () {
         class="max-w-sm"
       >
         <template #trailing>
-          <UButton type="submit" size="xs" color="black" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
+          <UButton type="submit" size="xs" color="black" :label="loading ? '订阅中' : '订阅'" :loading="loading" />
         </template>
       </UInput>
     </UFormGroup>

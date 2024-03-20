@@ -1,56 +1,12 @@
 ---
-title: Edgio
-description: 'Deploy your Nuxt Application to Edgio infrastructure.'
+title: 品牌概述
+description: 'SYRINCS专业音响品牌,用于安装或移动、室内或室外、大型或小型, SYRINCS音箱、控制电子设备、机械附件和远程控制装置可完全满足各种应用条件及恶劣的气候环境。'
 logoIcon: 'i-logos-edgio-icon'
-category: Hosting
-nitroPreset: 'edgio'
-website: https://edgio.app
+category: 品牌
+nitroPreset: 'Syrincs'
+website: /brand/intro
 ---
 
-Nuxt provides a built-in preset to generate output format compatible with [Edgio (formerly Layer0)](https://edg.io/).
+1981年，SYRINCS专业音响品牌由Wolfgang bartsch博士、Conrad Schucht和Jürgen Eggeling创建于德国柏林。在音色的使用设计中使用一种十分严密的数学秩序，这种惊人的数学秩序，并不是枯燥，而是带给我们的脸上满意的笑容。三十多年的辉煌历史，先后推出Club被动式扬声器系统、“MPA”扬声器系统、“S3”、“S2”紧凑型高声压级扬声器系统、大型会所使用的Eurosub扬声器系统、Odaiko 高端Hi-Fi低音炮、现代时尚的“MusicMate”系列扬声器等。2000年，推出的M3-220DT更是一直畅销至今。
 
-Edgio (formerly Layer0) extends the capabilities of a traditional CDN by not only hosting your static content, but also providing server-side rendering for progressive web applications as well as caching both your APIs and HTML at the network edge to provide your users with the fastest browsing experience.
-
-If this is your first time deploying to Edgio, the interactive CLI as part of the `deploy` command will prompt to authenticate using your browser. You may also [sign up](https://edgio.app/signup) prior to deployment.
-
-## Install the Edgio CLI
-
-```bash
-npm i -g @edgio/cli
-```
-
-## Testing production build locally with Edgio
-
-You can use Nitropack to test your app's developement experience locally:
-
-```bash
-npx nuxi build --preset=edgio
-```
-
-To simulate on local how your app would run in production with Edgio, run the following command:
-
-```bash
-edgio build && edgio run --production
-```
-
-## Deploying from your local machine
-
-Once you have tested your application locally, you may deploy using:
-
-```bash
-edgio deploy
-```
-
-## Deploying using CI/CD
-
-If you are deploying from a non-interactive environment, you will need to create an account on [Edgio Developer Console](https://app.layer0.co) first and setup a [deploy token](https://docs.edg.io/guides/basics/deploy#deploy-from-ci). Once the deploy token is created, save it as a secret to your environment. You can start the deploy by running:
-
-```bash
-edgio deploy --token=XXX
-```
-
-## Learn more
-
-::read-more{to="https://nitro.unjs.io/deploy/providers/edgio" target="_blank"}
-Head over **Nitro documentation** to learn more about the edgio deployment preset.
-::
+SYRINCS专业音响品牌，用于安装或移动、室内或室外、大型或小型，SYRINCS音箱、控制电子设备、机械附件和远程控制装置可完全满足各种应用条件及恶劣的气候环境。

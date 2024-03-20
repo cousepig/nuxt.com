@@ -27,8 +27,8 @@ const { footerLinks } = useNavigation()
 
     <template #right>
       <UButton aria-label="Syrincs on X" to="https://x.com/syrincs" target="_blank" icon="i-simple-icons-x" v-bind="($ui.button.secondary as any)" />
-      <UButton aria-label="Syrincs on Youtube" to="https://www.youtube.com" target="_blank" icon="i-simple-icons-youtube" v-bind="($ui.button.secondary as any)" />
-      <UButton aria-label="Syrincs on Facebook" to="https://www.facebook.com" target="_blank" icon="i-simple-icons-facebook" v-bind="($ui.button.secondary as any)" />
+      <UButton aria-label="Syrincs on Youtube" to="https://www.youtube.com/@syrincs" target="_blank" icon="i-simple-icons-youtube" v-bind="($ui.button.secondary as any)" />
+      <UButton aria-label="Syrincs on Facebook" to="https://www.facebook.com/syrincs" target="_blank" icon="i-simple-icons-facebook" v-bind="($ui.button.secondary as any)" />
     </template>
   </UFooter>
 </template>

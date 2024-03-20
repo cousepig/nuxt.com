@@ -1,33 +1,33 @@
 ---
-title: Design Kit
-head.description: Get the Nuxt assets such as Logo, Typography and Colors.
-description: Welcome to Nuxt design definition page. Identity was redefined by handpicking conscientiously colors, and shapes in order to express how easy & joyful Nuxt products are.
+title: SYRINCS VI 品牌套件
+head.description: Get the SYRINCS assets such as Logo, Typography and Colors.
+description: Welcome to SYRINCS design definition page. Identity was redefined by handpicking conscientiously colors, and shapes in order to express how easy & joyful SYRINCS products are.
 navigation.icon: 'i-ph-palette'
-links:
-  - label: 'Nuxt Brand Kit'
-    size: 'lg'
-    to: 'https://www.figma.com/community/file/1296154408275753939/nuxt-brand-kit'
-    icon: 'i-simple-icons-figma'
-    download: true
-    color: 'white'
-    target: '_blank'
+# links:
+#   - label: 'SYRINCS Brand Kit'
+#     size: 'lg'
+#     to: 'https://www.figma.com/community/file/1296154408275753939/nuxt-brand-kit'
+#     icon: 'i-simple-icons-figma'
+#     download: true
+#     color: 'white'
+#     target: '_blank'
 ---
 
 ## Logo History
 
-The Nuxt logo has evolved gradually over time, but the mountain shape and wordmark have been constant elements in its design.
+The SYRINCS logo has evolved gradually over time, but the mountain shape and wordmark have been constant elements in its design.
 
 ::div{class="hidden lg:block"}
-![Nuxt Logo Timeline](/assets/design-kit/timeline-light.svg){class="dark:hidden w-full"}
-![Nuxt Logo Timeline](/assets/design-kit/timeline-dark.svg){class="hidden dark:block w-full"}
+![SYRINCS Logo Timeline](/assets/design-kit/timeline-light.svg){class="dark:hidden w-full"}
+![SYRINCS Logo Timeline](/assets/design-kit/timeline-dark.svg){class="hidden dark:block w-full"}
 ::
 
 ::div{class="lg:hidden"}
-![Nuxt Logo Timeline](/assets/design-kit/timeline-mobile-light.svg){class="dark:hidden w-full"}
-![Nuxt Logo Timeline](/assets/design-kit/timeline-mobile-dark.svg){class="hidden dark:block w-full"}
+![SYRINCS Logo Timeline](/assets/design-kit/timeline-mobile-light.svg){class="dark:hidden w-full"}
+![SYRINCS Logo Timeline](/assets/design-kit/timeline-mobile-dark.svg){class="hidden dark:block w-full"}
 ::
 
-## Nuxt Logo
+## SYRINCS Logo
 
 The logo is made from two elements: the triangular mountains and the wordmark. In most cases, they should appear together as the opposite master lockup shows. The triangular mountains can be used on their own as an icon, profile picture or badge, but the wordmark should never be used without this symbol on the side.
 
@@ -50,7 +50,7 @@ The logo is made from two elements: the triangular mountains and the wordmark. I
 
 ## Color Palette
 
-Our color palette is based on our iconic Nuxt green and colours have been carefully considered to work in harmony and consistency across various media. When creating Nuxt communications, use the colour values shown to make sure your designs stay on-brand.
+Our color palette is based on our iconic SYRINCS green and colours have been carefully considered to work in harmony and consistency across various media. When creating SYRINCS communications, use the colour values shown to make sure your designs stay on-brand.
 
 ::u-page-grid
   :design-kit-color-card{background="#00DC82" name="Green"}
