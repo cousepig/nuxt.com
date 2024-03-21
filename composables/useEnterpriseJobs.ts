@@ -23,7 +23,7 @@ export const useEnterpriseJobs = () => {
       return
     }
 
-    const res = await $fetch<Job[]>('https://syrincs-com.vercel.app/api/jobs.json')
+    const res = await $fetch<Job[]>('/api/jobs.json')
 
     jobs.value = res.map((job) => {
       return { ...job, remote: mapRemote(job.remote), published_at: toRelativeDate(job.published_at) }
@@ -35,12 +35,12 @@ export const useEnterpriseJobs = () => {
   const filteredJobs = computed<Job[]>(() => {
     return [...jobs.value]
       .filter((job) => {
-        if (selectedLocation.value && !job.locations.includes(selectedLocation.value.key as string)) {
-          return false
-        }
-        if (selectedType.value && job.remote !== selectedType.value.key) {
-          return false
-        }
+        // if (selectedLocation.value && !job.locations.includes(selectedLocation.value.key as string)) {
+        //   return false
+        // }
+        // if (selectedType.value && job.remote !== selectedType.value.key) {
+        //   return false
+        // }
         return true
       })
   })

@@ -48,14 +48,14 @@ await fetchList()
 
           <template #footer>
             <div class="flex flex-wrap gap-3">
-              <UBadge
+              <!-- <UBadge
                 v-for="location of job.locations"
                 :key="location"
                 :label="location"
                 size="lg"
                 variant="subtle"
               />
-              <UBadge :label="job.remote" size="lg" variant="subtle" />
+              <UBadge :label="job.remote" size="lg" variant="subtle" /> -->
             </div>
           </template>
         </UPageCard>

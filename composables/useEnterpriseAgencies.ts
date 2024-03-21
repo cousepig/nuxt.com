@@ -4,7 +4,7 @@ import { slugify, random } from '../utils'
 export const useEnterpriseAgencies = () => {
   const route = useRoute()
   const router = useRouter()
-  const agencies = useState<Agency[]>('enterprise-agencies', () => [])
+  const agencies = useState<Agency[]>('enterprise-download', () => [])
 
   // Data fetching
   async function fetchList () {
@@ -43,12 +43,12 @@ export const useEnterpriseAgencies = () => {
   const filteredAgencies = computed<Agency[]>(() => {
     return [...agencies.value]
       .filter((agency) => {
-        if (selectedService.value && !agency.services.find(service => service.key === selectedService.value?.key)) {
-          return false
-        }
-        if (selectedRegion.value && !agency.regions.find(region => region.key === selectedRegion.value?.key)) {
-          return false
-        }
+        // if (selectedService.value && !agency.services.find(service => service.key === selectedService.value?.key)) {
+        //   return false
+        // }
+        // if (selectedRegion.value && !agency.regions.find(region => region.key === selectedRegion.value?.key)) {
+        //   return false
+        // }
 
         return true
       })
@@ -70,7 +70,7 @@ export const useEnterpriseAgencies = () => {
         ...service,
         exactQuery: true,
         to: {
-          name: 'enterprise-agencies',
+          name: 'enterprise-download',
           query: {
             ...route.query,
             service: service.key
@@ -98,7 +98,7 @@ export const useEnterpriseAgencies = () => {
           label: location.label,
           exactQuery: true,
           to: {
-            name: 'enterprise-agencies',
+            name: 'enterprise-download',
             query: {
               ...route.query,
               location: location.key
@@ -137,7 +137,7 @@ export const useEnterpriseAgencies = () => {
           label: region.label,
           exactQuery: true,
           to: {
-            name: 'enterprise-agencies',
+            name: 'enterprise-download',
             query: {
               ...route.query,
               region: region.key

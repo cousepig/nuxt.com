@@ -53,21 +53,7 @@ const _useNavigation = () => {
         label: '新闻',
         to: '/news',
         search: false,
-        active: route.path.startsWith('/news'),
-        children: [
-          {
-            label: '新闻',
-            description: '实时向您传递公司产品信息，展览动态及行业动态',
-            icon: 'i-ph-puzzle-piece-duotone',
-            to: '/news/company'
-          },
-          {
-            label: '行业资讯',
-            description: '行业动态资讯',
-            icon: 'i-ph-rocket-launch-duotone',
-            to: '/news/hang'
-          }
-        ]
+        active: route.path.startsWith('/news')
       },
       {
         label: '服务支持',
@@ -85,12 +71,6 @@ const _useNavigation = () => {
             label: '资料下载',
             to: '/enterprise/download',
             description: '产品资料、说明书下载.',
-            icon: 'i-ph-handshake-duotone'
-          },
-          {
-            label: '软件下载',
-            to: '/enterprise/soft',
-            description: '',
             icon: 'i-ph-handshake-duotone'
           },
           {

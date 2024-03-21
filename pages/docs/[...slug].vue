@@ -74,7 +74,7 @@ const ecosystemLinks = [{
 }, {
   icon: 'i-ph-handshake-duotone',
   label: 'Nuxt Agencies',
-  to: '/enterprise/agencies'
+  to: '/enterprise/download'
 }, {
   icon: 'i-ph-briefcase-duotone',
   label: 'Find a Nuxt Job',

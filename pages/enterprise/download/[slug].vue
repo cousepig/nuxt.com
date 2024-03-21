@@ -50,7 +50,7 @@ defineOgImage({
       <div class="absolute top-[68px] -left-[64px] hidden lg:flex">
         <UTooltip text="Back to agencies">
           <UButton
-            to="/enterprise/agencies"
+            to="/enterprise/download"
             icon="i-ph-caret-left"
             color="gray"
             :ui="{ rounded: 'rounded-full' }"

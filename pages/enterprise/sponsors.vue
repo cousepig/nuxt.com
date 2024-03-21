@@ -6,7 +6,7 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: sponsors } = await useFetch('https://syrincs-com.vercel.app/api/sponsors.json')
+const { data: sponsors } = await useFetch('/api/sponsors.json')
 
 const title = page.value.head?.title || page.value.title
 const description = page.value.head?.description || page.value.description
