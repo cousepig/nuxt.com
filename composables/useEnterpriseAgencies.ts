@@ -13,7 +13,7 @@ export const useEnterpriseAgencies = () => {
     }
 
     try {
-      const data = await queryContent('/enterprise/agencies').where({ _extension: 'md' }).find()
+      const data = await queryContent('/enterprise/download').where({ _extension: 'md' }).find()
 
       agencies.value = data.map(agency => ({
         ...agency,
