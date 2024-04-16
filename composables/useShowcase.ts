@@ -27,7 +27,7 @@ export const useShowcase = () => {
       return
     }
 
-    const res = await $fetch<ShowcaseList>('https://syrincs-com.vercel.app/api/showcase.json')
+    const res = await $fetch<ShowcaseList>('/api/showcase.json')
 
     // ensure groups & showcases are well sorted
     res?.groups?.sort((a, b) => Number(a.position) - Number(b.position))
